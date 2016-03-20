@@ -1,0 +1,14 @@
+<div class="contents row">
+  <p><%= @nickname %>さんの投稿一覧</p>
+  <% @kakuremis.each do |ninja| %>
+    <%= render partial: "ninja/ninja", locals: { ninja: ninja } %>
+  <%= paginate(@kakuremis) %>
+    <div class="content_post" style="background-image: url(<%= ninja.image %>);">
+    <p>
+     <%= br(ninja.text) %>
+   </p>
+ </div>
+  <% end %>
+
+  <%= paginate(@kakuremis) %>
+  </div>

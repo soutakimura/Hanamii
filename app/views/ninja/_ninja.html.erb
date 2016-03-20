@@ -1,0 +1,27 @@
+
+
+   <div class="content_post" >
+   <div class="more">
+    <span><%= image_tag 'arrow_top.png' %></span>
+    <ul class="more_list">
+      <li>
+      </li>
+      <% if user_signed_in? && current_user.id == ninja.user_id %>
+        <li>
+          <%= link_to '編集', "/ninjas/#{ninja.id}/edit", method: :get %>
+        </li>
+        <li>
+          <%= link_to '削除', "/ninjas/#{ninja.id}", method: :delete %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+    <p>
+      <%= br(ninja.text) %>
+    </p>
+    <span class="name">
+    <a href="/users/<%= ninja.user_id %>">
+      <span>投稿者</span>
+    </a>
+  </span>
+  </div>
