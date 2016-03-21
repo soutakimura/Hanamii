@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'users/:id' => 'users#show'
   delete 'ninjas/:id' => 'ninja#destroy'
   get 'ninjas/:id/edit' => 'ninja#edit'
+  get 'ninjas/:id/content' => 'ninja#content'
   patch 'ninjas/:id' => 'ninja#update'
 end
 

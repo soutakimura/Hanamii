@@ -25,7 +25,9 @@ class NinjaController < ApplicationController
   def edit
     @ninja = Syuriken.find(params[:id])
 end
-
+def content
+  @ninja = Syuriken.find(params[:id])
+end
   def update
     ninja = Syuriken.find(params[:id])
     if ninja.user_id == current_user.id

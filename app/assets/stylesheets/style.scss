@@ -224,14 +224,14 @@ div.contents.row {
   font-family: "游ゴシック", "YuGothic";
   }
   div.content_post {
-    @include boxBase(20px 0 ,30px);
+    @include boxBase(20px 0 ,0px);
     position: relative;
-    height: 400px;
+    height: 100px;
     color: #fff;
     background-size: cover;
     background-position: center center;
     border-radius: 3px;
-    box-shadow: 0 0 10px rgba($black,0.2);
+    box-shadow: 0 0 5px rgba($black,0.2);
     &:after {
       content: '';
       position: absolute;
@@ -240,10 +240,12 @@ div.contents.row {
       left: 0;
       right: 0;
       @include filter-gradient(#000000, #a60000, vertical);
-      @include background-image(linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 62%,rgba(0,0,0,0.85) 100%));
+      @include background-image(linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 62%,rgba(0,0,0,0.05) 100%));
       z-index: 1;
       border-radius: 3px;
+      
     }
+    
     .more {
       position: absolute;
       cursor: pointer;
@@ -255,7 +257,9 @@ div.contents.row {
       text-align: right;
       &:hover ul.more_list {
         display: block;
+
       }
+      
       ul.more_list {
         position: absolute;
         text-align: left;
@@ -283,10 +287,29 @@ div.contents.row {
         }
       }
     }
+    div.aikon{
+    position: static;
+    }
+    .cut{
+    position:relative;
+    float:left;
+    overflow: hidden;
+    height:100px;
+    width:100px;
+    display:block;
+
+    }
+    .cut_image{
+    display:block;
+    height:150px;
+    position:absolute;
+    left:-0px;
+    top:-20px;
+    }
     p {
       @extend .serif;
       position: absolute;
-      left: 30px;
+      left: 150px;
       right: 100px;
       bottom: 30px;
       margin: 0;
