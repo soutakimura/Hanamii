@@ -1,5 +1,5 @@
 class NinjaController < ApplicationController
- before_action :move_to_index, except: :index
+ before_action :move_to_index, :except=>["index","content"]
   def index
     @kakuremis =Syuriken.includes(:user).page(params[:page]).per(5).order("created_at DESC")
   
@@ -8,7 +8,9 @@ class NinjaController < ApplicationController
   def new
 
   end
-
+def content
+    @ninja = Syuriken.find(params[:id])
+  end
   
 
   def create
@@ -47,5 +49,9 @@ end
   def move_to_index
     redirect_to action: :index unless user_signed_in?
   end
+
+  
+    
+
 
 end
