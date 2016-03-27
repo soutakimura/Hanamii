@@ -229,6 +229,8 @@ div.contents.row {
   div.content_post {
     @include boxBase(20px 0 ,0px);
     position: relative;
+    margin-left: -200px;
+    margin-right: 200px;
     height: 100px;
     color: #fff;
     background-size: cover;
