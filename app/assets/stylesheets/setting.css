@@ -456,7 +456,7 @@ ul {
 ul li {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px;
 }
 
 .row {
@@ -465,7 +465,7 @@ ul li {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1500px;
+  max-width: 2000px;
   *zoom: 1;
 }
 .row .grid-1,
@@ -500,7 +500,10 @@ ul li {
   width: 39.86667%;
 }
 .row .grid-6 {
-  width: 48.2%;
+  width: 300px;
+}
+.row .grid-66 {
+  width: 200px;
 }
 .row .grid-7 {
   width: 56.53333%;
@@ -610,4 +613,34 @@ ul li {
     width: 48.2% !important;
   }
 }
+.row .grid-6,{
+
+}
+.ally:after{content: "";
+                 display:block;
+                 clear:both;
+  }
+.lefty{float:left;
+            width:75%}
+.righty{float:left;
+  padding-top:20px;
+             width:25%
+             }
+.menuy{max-width: 300px;}
+.menuy ul{margin:0px;
+          padding:0px;
+          list-style:none;
+         }
+.menuy li a{displya:block;
+            padding:0px;
+            margin:0px;
+            color:#000000;
+            font-size: 12px;
+            text-decoration: none}
+.menuy ul:after{content:"";
+               display:block;
+               clear:both}
+.menuy li{float:left;
+          width:auto}
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+.imagekyoto{padding-top:10px;}

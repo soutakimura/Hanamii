@@ -1,4 +1,13 @@
 <div class="contents row" >
+<div class="ally">
+<div class="lefty">
 <%= render partial:"ninja",collection: @kakuremis %>
 <%= paginate(@kakuremis) %>
+</div>
+  <div class ="righty">
+    
+    <span class="imagakyoto"><%= image_tag 'kyotoimage.jpg',:width =>'300px' %></span>
+
+  </div>
+  </div>
   </div>

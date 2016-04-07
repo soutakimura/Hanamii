@@ -41,7 +41,7 @@ $white: white;
 
 body,html {
   height: 100%;
-  background-color: $lightGray;
+  background-color: $white;
 }
 
 body {
@@ -226,11 +226,13 @@ div.contents.row {
   .new_user{
   font-family: "sans-serif";
   }
+
   div.content_post {
     @include boxBase(20px 0 ,0px);
     position: relative;
     margin-left: 150px;
-    margin-right: 450px;
+    margin-right: 0px;
+    max-width:1250px;
     height: 100px;
     color: #fff;
     background-size: cover;
