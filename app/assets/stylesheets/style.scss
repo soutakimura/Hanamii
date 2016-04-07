@@ -229,8 +229,8 @@ div.contents.row {
   div.content_post {
     @include boxBase(20px 0 ,0px);
     position: relative;
-    margin-left: -200px;
-    margin-right: 200px;
+    margin-left: 150px;
+    margin-right: 450px;
     height: 100px;
     color: #fff;
     background-size: cover;
@@ -295,6 +295,7 @@ div.contents.row {
         }
       }
     }
+
     div.aikon{
     position: static;
     }
@@ -429,4 +430,7 @@ color: #CCFF33;
 }
 a:hover {
 color: #dcdcdc;
+}
+nav.pagination {
+    margin-left: 200px;
 }

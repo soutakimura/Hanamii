@@ -24,7 +24,7 @@
   <body>
     <header class="header">
       <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">Hanamii</a></h1>
+        <h1 class="grid-6"><a href="/"><%= image_tag 'logo.png',:width =>'200px' %></a></h1>
         <% if user_signed_in? %>
         <div class="user_nav grid-6">
         <%= link_to "投稿する","/ninjas/new" %>
