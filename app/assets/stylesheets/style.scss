@@ -53,7 +53,7 @@ line-height: 1.57;
   letter-spacing: 0.15em;
   font-size: 16px;
   color: $dark;
-  font-family: 'Unica One', "Avenir", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  font-family: Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
   margin: 0;
 }
 
@@ -238,7 +238,7 @@ div.contents.row {
     background-size: cover;
     background-position: center center;
     border-radius: 3px;
-    box-shadow: 0 0 5px rgba($black,0.2);
+    
     &:after {
       content: '';
       position: absolute;
@@ -247,7 +247,7 @@ div.contents.row {
       left: 0;
       right: 0;
       @include filter-gradient(#000000, #a60000, vertical);
-      @include background-image(linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 62%,rgba(0,0,0,0.05) 100%));
+      
       z-index: 1;
       border-radius: 3px;
       
@@ -327,7 +327,7 @@ div.contents.row {
       font-size: 20px;
       z-index: 2;
       font-weight: bold;
-      text-shadow: 0 0 2px #000, 0 0 1px #000, 0 0 1px #000;
+      
     }
     span.name {
       position: absolute;
@@ -418,9 +418,9 @@ footer {
   font-family: "sans-serif";
   }
   h1{
-  a{color:#ffb6c1;}
+  a{color:#666666;}
   a:visited{
-  color:#ffb6c1;
+  color:#666666;
   }}
 h1,h2{
   font-family: "sans-serif";
@@ -428,7 +428,7 @@ h1,h2{
   }
 
   a:visited {
-color: #CCFF33;
+color: #666666;
 }
 a:hover {
 color: #dcdcdc;
