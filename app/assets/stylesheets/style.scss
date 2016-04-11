@@ -60,6 +60,8 @@ line-height: 1.57;
 a {
   text-decoration: none;
   color: $dark;
+  margin-left: 20px;
+
   @extend .transition;
   &:hover {
     color: $accent;
@@ -231,7 +233,7 @@ div.contents.row {
     @include boxBase(20px 0 ,0px);
     position: relative;
     margin-left: 150px;
-    margin-right: 0px;
+    margin-right: 20px;
     max-width:1250px;
     height: 100px;
     color: #fff;
@@ -306,7 +308,7 @@ div.contents.row {
     float:left;
     overflow: hidden;
     height:100px;
-    width:100px;
+    width:150px;
     display:block;
 
     }
