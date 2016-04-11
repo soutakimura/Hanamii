@@ -1,11 +1,25 @@
 <div class="contents row">
+<div class="editman">
 　<%= form_tag("/ninjas/#{@ninja.id}",method: :patch) do %>
 <h3>
  編集する
 </h3>
 <textarea cols="30" name="text" placeholder="text" rows="1"><%= @ninja.text %></textarea>
-      <input placeholder="Image Url" type="text" name="image" valuet="<%= @ninja.image %>" autofocus="true">
+<textarea cols="30" name="image" placeholder="text" rows="1"><%= @ninja.image %></textarea>
+      
+      
       <textarea cols="30" name="content" placeholder="content" rows="10"><%= @ninja.content %></textarea>
+
+
+<textarea cols="30" name="image2" placeholder="image2" rows="1"><%= @ninja.image2 %></textarea>
+      
+      
+      <textarea cols="30" name="content2" placeholder="content2" rows="10"><%= @ninja.content2 %></textarea>
+      <textarea cols="30" name="image3" placeholder="image3" rows="1"><%= @ninja.image3 %></textarea>
+      
+      
+      <textarea cols="30" name="content3" placeholder="content3" rows="10"><%= @ninja.content3 %></textarea>
       <input type="submit" value="SENT">
     <% end %>
+  </div>
   </div>

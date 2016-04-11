@@ -396,6 +396,8 @@ form {
   box-shadow: 0 0 10px rgba($black,0.2);
   background-color: $white;
   box-sizing: border-box;
+  max-width:800px;
+  margin: 0 auto;
 }
 .comments {
   padding: 5px;
@@ -437,4 +439,8 @@ color: #dcdcdc;
 }
 nav.pagination {
     margin-left: 200px;
+}
+div.editman{
+  max-width:800px;
+  margin: 0 auto;
 }

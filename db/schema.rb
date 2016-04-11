@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160316113201) do
+ActiveRecord::Schema.define(version: 20160411182007) do
 
   create_table "syurikens", force: :cascade do |t|
     t.text     "text",       limit: 65535
@@ -20,6 +20,10 @@ ActiveRecord::Schema.define(version: 20160316113201) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id",    limit: 4
+    t.text     "image2",     limit: 65535
+    t.text     "image3",     limit: 65535
+    t.text     "content2",   limit: 65535
+    t.text     "content3",   limit: 65535
   end
 
   create_table "users", force: :cascade do |t|
