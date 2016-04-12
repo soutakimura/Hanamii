@@ -15,7 +15,7 @@ def content
   
 
   def create
-    Syuriken.create(image:ninja_params[:image],content:ninja_params[:content],image2:ninja_params[:image2],content2:ninja_params[:content2],image3:ninja_params[:image3],content3:ninja_params[:content3],text:ninja_params[:text],user_id: current_user.id)
+    Syuriken.create(image:ninja_params[:image],content:ninja_params[:content],image2:ninja_params[:image2],content2:ninja_params[:content2],image3:ninja_params[:image3],content3:ninja_params[:content3],text:ninja_params[:text],user_id: current_user.id,genre:ninja_params[:genre],prefecture:ninja_params[:prefecture])
   end
   
   def destroy
@@ -44,7 +44,7 @@ end
   end
   private
   def ninja_params
-    params.permit(:image,:content,:text,:image2,:image3,:content2,:content3)
+    params.permit(:image,:content,:text,:image2,:image3,:content2,:content3,:genre,:prefecture)
   end
 
   def move_to_index
