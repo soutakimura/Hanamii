@@ -1,16 +1,17 @@
 <div class="contents row">
 <div class="ally">
 <div class="lefty">
-  <p class="genretitle"><%= @nickname %>さんの投稿一覧</p>
-  <% @kakuremis.each do |ninja| %>
+
+  <p class="genretitle">Fukushimaの投稿一覧</p>
+
+  <% @search.each do |ninja| %>
     <%= render partial: "ninja/ninja", locals: { ninja: ninja } %>
   
    
   <% end %>
-
-  <%= paginate(@kakuremis) %>
+  
   </div>
   </div>
   <div class="righty">
-  </div>
+  
   </div>

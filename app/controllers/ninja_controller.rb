@@ -2,7 +2,7 @@ class NinjaController < ApplicationController
  before_action :move_to_index, :except=>["index","content"]
   def index
     @kakuremis =Syuriken.includes(:user).page(params[:page]).per(10).order("created_at DESC")
-  
+   
   end
 
   def new

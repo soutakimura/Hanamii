@@ -5,6 +5,69 @@
  編集する
 </h3>
 <textarea cols="30" name="text" placeholder="text" rows="1"><%= @ninja.text %></textarea>
+<select name="prefecture">
+<option value="<%= @ninja.prefecture %>" selected><%= @ninja.prefecture %>
+<option value="Hokkaido">Hokkaido
+<option value="Aomori">Aomori
+<option value="Iwate">Iwate
+<option value="Miyagi">Miyagi
+<option value="Akita">Akita
+<option value="Yamagata">Yamagata
+<option value="Fukushima">Fukushima
+<option value="Ibaragi">Ibaragi
+<option value="Tochigi">Tochigi
+<option value="Gunma">Gunma
+<option value="Saitama">Saitama
+<option value="Chiba">Chiba
+<option value="Tokyo">Tokyo
+<option value="Kanagawa">Kanagawa
+<option value="Nigata">Nigata
+<option value="Toyama">Toyama
+<option value="Ishikawa">Ishikawa
+<option value="Fukui">Fukui
+<option value="Yamashina">Yamanashi
+<option value="Nagano">Nagano
+<option value="Gifu">Gifu
+<option value="Shizuoka">Shizuoka
+<option value="Aichi">Aichi
+<option value="Mie">Mie
+<option value="Shiga">Shiga
+<option value="Kyoto">Kyoto
+<option value="Osaka">Osaka
+<option value="Hyogo">Hyogo
+<option value="Nara">Nara
+<option value="Wakayama">Wakayama
+<option value="Tottori">Tottori
+<option value="Shimane">Shimane
+<option value="Okayama">Okayama
+<option value="Hiroshima">Hiroshima
+<option value="Yamaguchi">Yamaguchi
+<option value="Tokushima">Tokushima
+<option value="Kagawa">Kagawa
+<option value="Ehime">Ehime
+<option value="Kochi">Kochi
+<option value="Fukuoka">Fukuoka
+<option value="Saga">Saga
+<option value="Nagasaki">Nagasaki
+<option value="Kumamoto">Kumamoto
+<option value="Oita">Oita
+<option value="Miyazaki">Miyazaki
+<option value="Kagoshima">Kagoshima
+<option value="Okinawa">Okinawa
+</select>
+
+<select name="genre">
+<option value="<%= @ninja.genre %>" selected><%= @ninja.genre %>
+<option value="Restaurant">Restaurant
+<option value="Touristspot">Spot
+<option value="Food">Food
+<option value="Shop">Shop
+<option value="Culture">Culture
+<option value="Souvenir">Souvenir
+<option value="Museum">Museum
+<option value="Rural area">Rural area
+
+</select>
 <textarea cols="30" name="image" placeholder="text" rows="1"><%= @ninja.image %></textarea>
       
       

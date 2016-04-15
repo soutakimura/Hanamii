@@ -500,10 +500,10 @@ ul li {
   width: 39.86667%;
 }
 .row .grid-6 {
-  width: 300px;
+  width: 30%;
 }
-.row .grid-66 {
-  width: 200px;
+.row .grid-16 {
+  width: 300px;
 }
 .row .grid-7 {
   width: 56.53333%;
@@ -626,7 +626,8 @@ ul li {
   padding-top:20px;
              width:25%
              }
-.menuy{max-width: 300px;}
+.menuy{max-width: 500px;
+       margin-left: -50px}
 .menuy ul{margin:0px;
           padding:0px;
           list-style:none;

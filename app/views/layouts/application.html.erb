@@ -28,9 +28,11 @@
         <span class="grid-6">
         <nav class="menuy">
         <ul>
-          <li>CULTURE</li>
-          <li>FOOD</li>
-          <li>SHOP</li>
+          <li><%=link_to "CULTURE","/genres/Culture",method: :get %></li>
+          <li><%=link_to "FOOD","/genres/Food",method: :get %></li>
+          <li><%=link_to "SHOP","/genres/Shop",method: :get %></li>
+          <li><%=link_to "STAY","/genres/Stay",method: :get %></li>
+          <li><%=link_to "SPOT","/genres/Spot",method: :get %></li>
         </ul>
       </nav></span>
         <% if user_signed_in? %>
