@@ -50,7 +50,7 @@ body {
 
 h1,h2,h3,h4,h5,h6,body {
 line-height: 1.57;
-  letter-spacing: 0.15em;
+  
   font-size: 16px;
   color: $dark;
   font-family: Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
@@ -260,7 +260,7 @@ div.contents.row {
     }
     .honbun{
     a:link{
-    color:#fff;}
+    color:#AAAAAA;}
     }
     .more {
       position: absolute;
@@ -337,8 +337,9 @@ div.contents.row {
     }
     span.name {
       position: absolute;
-      right: 30px;
-      bottom: 30px;
+      right: 150px;
+      bottom: 0px;
+      color: #AAAAAA;
       z-index: 2;
       font-size: 13px;
       a {
@@ -455,13 +456,33 @@ div.kijicontent{
 
 div.articleman{
   margin:0 auto;
-  background-color: #FFEFF2;
+  background-color: #FBDEE6;
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
   padding: 10px 15px;
   margin-left: 148px;
   margin-right: 15px;
+}
+div.articleman2{
+  margin:0 auto;
+  background-color: #FBDEE6;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+div.articleman3{
+  margin:0 auto;
+  background-color: #FFEFF2;
+  font-size: 20px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  margin-left: 5px;
+  margin-right: 25px;
 }
 span.genre{
   background-color: #ffe8f8;
@@ -480,4 +501,7 @@ p.genretitle{
 }
 span.imagakyoto{
   margin-left:-20px;
+}
+span.namename{
+  margin-left:550px
 }

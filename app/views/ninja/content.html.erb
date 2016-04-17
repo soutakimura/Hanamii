@@ -5,6 +5,7 @@
 <h2>
  <%= @ninja.text %>
 </h2>
+  <span class="namename">written_by&nbsp;<%= @ninja.user.nickname %></span><br>
   <span class="prefecture"><%= link_to "/prefectures/#{@ninja.prefecture}" do %><%= @ninja.prefecture %>&nbsp;&nbsp;</span>&nbsp;<% end %><span class="genre"><%= link_to "/genres/#{@ninja.genre}" do %><%= @ninja.genre %>&nbsp;&nbsp;</span>
 <% end %>
   <p><img src="<%= @ninja.image %>" width="670" height="300"></p>
@@ -12,6 +13,8 @@
     <p><img src="<%= @ninja.image2 %>" width="670" height="300"></p>
   <p><%= @ninja.content2 %></p>
   <p><img src="<%= @ninja.image3 %>" width="670" height="300"></p>
-  <p><%= @ninja.content3 %></p></artical>
+  <p><%= @ninja.content3 %></p>
+<p>Source:<br><%= @ninja.quotation %></p>
+  </artical>
   </div>
   </div>

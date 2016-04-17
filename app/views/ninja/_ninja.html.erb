@@ -6,15 +6,14 @@
   <div class="honbun">
     <p><%= link_to "#{ninja.text} ", "/ninjas/#{ninja.id}/content", method: :get %></p>
     <span class="name">
-    <a href="/users/<%= ninja.user_id %>">
-      <span>投稿者</span><%= ninja.user.nickname %>
-    </a>
+    
+      written_by&nbsp;<%= ninja.user.nickname %>
+    
   </span></div></div>
    <div class="more">
     <span></span>
     <ul class="more_list">
-      <li>
-      </li>
+      
       <% if user_signed_in? && current_user.id == ninja.user_id %>
         <li>
           <%= link_to '編集', "/ninjas/#{ninja.id}/edit", method: :get %>

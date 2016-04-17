@@ -2,7 +2,7 @@
 <div class="ally">
 <div class="lefty">
 
-  <p class="genretitle">STAYの投稿一覧</p>
+  <p class="genretitle"><div class="articleman">Stay</div></p>
 
   <% @searchy.each do |ninja| %>
     <%= render partial: "ninja/ninja", locals: { ninja: ninja } %>
@@ -11,7 +11,12 @@
   <% end %>
   
   </div>
-  </div>
+  
   <div class="righty">
+  <span class="imagakyoto"><%= link_to "/prefectures/Kyoto" do %><%= image_tag 'kyotoimage.jpg',:width =>'300px' %><% end %></span><p></p>
+<span class="imagakyoto"><%= link_to "/prefectures/Osaka" do %><%= image_tag 'Osaka1.jpg',:width =>'300px' %><% end %></span>
+  <div class="articleman2"><center>about Haname</center></div>
+  <div class="articleman3"><center><%= link_to "about", "/ninjas/", method: :get %></center></div>
+  </div>
   </div>
   </div>
